@@ -14,11 +14,11 @@ header {
   margin: auto;
 }
 #cardList {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+  // display: flex;
+  // flex-direction: row;
+  align-content: center;
+  // flex-wrap: wrap;
+  //gap: 1px;
   width: $pimWidth;
   margin: auto;
   margin-top: 50px;
@@ -35,13 +35,17 @@ header {
   margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 64px;
-  .card-body {
-    display: flex !important;
-    align-items: center;
-    font-size: 25px;
+  .card {
+    height: fit-content !important;
+    .card-body {
+      display: flex !important;
+      align-items: center;
+      font-size: 25px;
+      height: fit-content !important;
+    }
   }
 }
 

@@ -11,19 +11,8 @@ header {
 }
 
 #cardList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 15px;
+  -ms-flex-line-pack: center;
+      align-content: center;
   width: 1024px;
   margin: auto;
   margin-top: 50px;
@@ -47,15 +36,21 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 64px;
 }
 
-#cardListRepeat .card-body {
+#cardListRepeat .card {
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+}
+
+#cardListRepeat .card .card-body {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -63,6 +58,9 @@ header {
       -ms-flex-align: center;
           align-items: center;
   font-size: 25px;
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
 }
 
 footer {

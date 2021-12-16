@@ -21,6 +21,11 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/views/dist/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flexmasonry/dist/flexmasonry.css"
+    />
+    <script src="https://unpkg.com/flexmasonry/dist/flexmasonry.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -36,9 +41,9 @@
         Search <input id="searchCard" placeholder="Search card" />
       </div>
       <div id="cardListRepeat"></div>
-      <div id="cardList">
+      <div class="grid" id="cardList">
         <% results.forEach((result, i, arr)=>{%>
-        <div class="card" style="width: 18em">
+        <div class="card" style="width: 18em; height: fit-content">
           <div class="card-header"></div>
           <div class="card-body">
             <p class="card-text"><%=JSON.stringify(arr[i])%></p>
@@ -49,7 +54,7 @@
           </button> -->
           </div>
         </div>
-        <%})%> <%= results.length%>
+        <%})%>
       </div>
     </main>
     <%- include('includes/footer.ejs'); -%>
