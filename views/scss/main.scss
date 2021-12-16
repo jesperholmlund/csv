@@ -1,0 +1,54 @@
+$primBackground: cornsilk;
+$pimWidth: 1024px;
+
+header {
+  background: $primBackground;
+  width: $pimWidth;
+  height: 200px;
+  margin: auto;
+}
+
+#mainHeader {
+  // background: $primBackground;
+  width: $pimWidth;
+  margin: auto;
+}
+#cardList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: $pimWidth;
+  margin: auto;
+  margin-top: 50px;
+  .card {
+    background: $primBackground;
+  }
+  .card:hover {
+    background: #fde99a;
+  }
+}
+
+#cardListRepeat {
+  width: 1024px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 64px;
+  .card-body {
+    display: flex !important;
+    align-items: center;
+    font-size: 25px;
+  }
+}
+
+footer {
+  background: $primBackground;
+  width: $pimWidth;
+  margin: auto;
+  margin-top: 50px;
+  height: 200px;
+}

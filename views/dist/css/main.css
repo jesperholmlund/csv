@@ -1,0 +1,75 @@
+header {
+  background: cornsilk;
+  width: 1024px;
+  height: 200px;
+  margin: auto;
+}
+
+#mainHeader {
+  width: 1024px;
+  margin: auto;
+}
+
+#cardList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+  width: 1024px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#cardList .card {
+  background: cornsilk;
+}
+
+#cardList .card:hover {
+  background: #fde99a;
+}
+
+#cardListRepeat {
+  width: 1024px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 64px;
+}
+
+#cardListRepeat .card-body {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+}
+
+footer {
+  background: cornsilk;
+  width: 1024px;
+  margin: auto;
+  margin-top: 50px;
+  height: 200px;
+}
+/*# sourceMappingURL=main.css.map */
