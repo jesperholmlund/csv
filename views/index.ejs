@@ -31,16 +31,6 @@
   <body>
     <%- include('includes/header'); -%>
     <main>
-      <div id="mainHeader">
-        Click a card to add it to your reptition stack
-        <br />
-        <button id="start" class="btn btn-primary">
-          Start
-          <span id="cardCounter" class="badge badge-danger">0</span></button
-        ><br />
-        Search <input id="searchCard" placeholder="Search card" />
-        <div id="searchResult" style="width: 20em">s</div>
-      </div>
       <div id="cardListRepeat"></div>
       <div class="grid" id="cardList">
         <% results.forEach((result, i, arr)=>{%>

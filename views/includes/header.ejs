@@ -1,1 +1,33 @@
-<header class=""></header>
+<header class="">
+  <div id="mainHeader">
+    <br />
+    <!-- <input id="searchCard" placeholder="Search card" />
+    <div id="searchResult" style="width: 20em"></div> -->
+    <input
+      type="button"
+      id="random"
+      class="btn btn-primary"
+      value="Randomize 7"
+    />
+    <button id="start" class="btn btn-primary">
+      Start
+      <span id="cardCounter" class="badge badge-danger">0</span>
+    </button>
+    <form
+      ref="uploadForm"
+      id="uploadForm"
+      action="/upload"
+      method="post"
+      encType="multipart/form-data"
+      style="width: 30em"
+    >
+      <input class="btn" type="file" name="csvFile" />
+      <input
+        class="btn btn-primary"
+        id="upload"
+        type="submit"
+        value="Upload notes!"
+      />
+    </form>
+  </div>
+</header>

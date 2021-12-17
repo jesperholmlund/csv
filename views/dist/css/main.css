@@ -6,6 +6,7 @@ header {
 }
 
 #mainHeader {
+  background: cornsilk;
   width: 1024px;
   margin: auto;
 }

@@ -1,5 +1,3 @@
-//const { all } = require("express/lib/application");
-
 class Cards {
   constructor(_id, card) {
     this.id = _id;
@@ -10,8 +8,13 @@ class Cards {
 let repeat = [];
 let startBtn = document.getElementById("start");
 startBtn.disabled = true;
-
+let randBtn = document.getElementById("random");
+randBtn.disabled = true;
 let cards = document.querySelectorAll(".card");
+
+if (cards.length > 0) {
+  randBtn.disabled = false;
+}
 cards.forEach((card, i, arr) => {
   card.addEventListener("click", () => {
     if ((startBtn.disabled = true)) {
@@ -53,6 +56,9 @@ startBtn.addEventListener("click", () => {
       if (repeat[i] == undefined) {
         startBtn.disabled = false;
         cardList.style.display = "flex";
+        document.querySelector("header").style.visibility = "visible";
+        document.querySelector("#mainHeader").style.visibility = "visible";
+        document.querySelector("footer").style.visibility = "visible";
         repeat = [];
         document.getElementById("cardCounter").innerHTML = repeat.length;
         startBtn.disabled = true;
@@ -65,6 +71,9 @@ startBtn.addEventListener("click", () => {
   });
   startBtn.disabled = true;
   cardList.style.display = "none";
+  document.querySelector("header").style.visibility = "hidden";
+  document.querySelector("#mainHeader").style.visibility = "hidden";
+  document.querySelector("footer").style.visibility = "hidden";
 });
 FlexMasonry.init(".grid", {
   responsive: false,
