@@ -1,3 +1,5 @@
+//const { all } = require("express/lib/application");
+
 class Cards {
   constructor(_id, card) {
     this.id = _id;
@@ -67,4 +69,20 @@ startBtn.addEventListener("click", () => {
 FlexMasonry.init(".grid", {
   responsive: false,
   numCols: 3,
+});
+
+const totalCardItems = [];
+let searchCardItems = document.querySelectorAll(".card-text");
+searchCardItems.forEach((cardItem) => {
+  totalCardItems.push(cardItem.innerText);
+});
+console.log(totalCardItems);
+
+const searchCard = document.getElementById("searchCard");
+const arr = [];
+searchCard.addEventListener("keyup", () => {
+  totalCardItems.filter((cardItem) =>
+    cardItem.toLowerCase().includes(searchCard.value.toLowerCase())
+  );
+  //document.getElementById("searchResult").innerHTML = cardOutPut;
 });
